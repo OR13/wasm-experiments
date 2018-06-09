@@ -1,17 +1,23 @@
 {
-  "name": "@wasm/empty_ts",
+  "name": "wasm-project",
   "description": "",
   "version": "1.0.0",
   "scripts": {
-    "build": "gulp"
+    "build": "gulp",
+    "test": "jest"
   },
   "devDependencies": {
     "assemblyscript": "AssemblyScript/assemblyscript",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "jest": "^23.1.0"
   },
   "wasmStudio": {
-    "name": "Empty AssemblyScript Project",
-    "description": "# Empty AssemblyScript Project\n\n[AssemblyScript](https://github.com/AssemblyScript/assemblyscript) compiles strictly typed TypeScript to WebAssembly using Binaryen.\n\nSee the [AssemblyScript wiki](https://github.com/AssemblyScript/assemblyscript/wiki) for further instructions and documentation.",
+    "name": "WASM Project",
+    "description": "# https://github.com/OR13/wasm-experiments",
     "icon": "typescript-lang-file-icon"
+  },
+  "dependencies": {
+    "mocha": "^5.2.0",
+    "node-fetch": "^2.1.2"
   }
 }
