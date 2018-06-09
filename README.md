@@ -2,8 +2,10 @@
 
 ```
 npm i 
-npm run asbuild
 npm run start
+
+
+http://localhost:3000/src/main
 ```
 
 ### Examples:

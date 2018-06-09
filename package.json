@@ -3,8 +3,7 @@
   "description": "",
   "version": "1.0.0",
   "scripts": {
-    "build": "gulp",
-    "start": "serve ./src"
+    "start": "serve ./wasm-project"
   },
   "devDependencies": {
     "assemblyscript": "AssemblyScript/assemblyscript",
