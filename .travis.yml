@@ -5,3 +5,4 @@ install:
 
 script:
   - npm run test
+  - node --expose-wasm --harmony test.js

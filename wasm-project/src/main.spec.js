@@ -1,31 +1,20 @@
-// const sum = require('./sum');
-// const main = require('./main');
-
-// const fetch = require('node-fetch');
-
-// WebAssembly.instantiateStreaming(fetch('../out/main.wasm'), {
-//   env: {
-//     sayHello: function() {
-//       console.log('Hello from WebAssembly!');
-//     },
-//     abort: function(msg, file, line, column) {
-//       console.error('abort called at main.ts:' + line + ':' + column);
-//     }
-//   }
-// })
-//   .then(result => {
-//     const exports = result.instance.exports;
-//     document.getElementById('container').innerText =
-//       'Result: ' + exports.add(19, 23);
-//   })
-//   .catch(console.error);
+const assert = require('assert');
+const wasmAvailable = typeof WebAssembly !== 'undefined';
+assert(wasmAvailable, 'The `WebAssembly` object is unavailable.');
 
 const fs = require('fs');
 const buf = fs.readFileSync('./out/main.wasm');
-const lib = WebAssembly.instantiateModule(new Uint8Array(buf)).exports;
 
-
-test('adds 1 + 2 to equal 3', () => {
+test('adds 1 + 2 to equal 3', async () => {
+  let lib = await WebAssembly.instantiate(buf, {
+    env: {
+      sayHello: function() {
+        console.log('Hello from WebAssembly!');
+      },
+      abort: function(msg, file, line, column) {
+        console.error('abort called at main.ts:' + line + ':' + column);
+      }
+    }
+  });
   console.log(lib);
-  // expect(sum(1, 2)).toBe(3);
 });
