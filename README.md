@@ -24,3 +24,5 @@ lerna run --scope wasm-swagger test
 
 ### Media:
 - [binaryen](https://kripken.github.io/talks/binaryen.html#/)
+- [debugging](http://webassemblycode.com/how-to-debug-webassemly/)
+- [why](https://medium.com/@KevinHoffman/in-search-of-webassembly-2c96ad1d6fe2)

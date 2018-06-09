@@ -4,7 +4,6 @@ node_js:
 
 install:
   - npm i -g lerna nyc swagger
-  - npm i
 
 script:
   - lerna bootstrap

@@ -2,7 +2,9 @@
   "name": "wasm-experiments",
   "description": "",
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+    "docker:build:binaryen": "docker build ./docker/binaryen -t binaryen"
+  },
   "devDependencies": {
     "lerna": "^2.11.0"
   }
