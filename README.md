@@ -21,3 +21,6 @@ lerna run --scope wasm-swagger test
 
 - [assemblyscript](https://github.com/AssemblyScript/assemblyscript)
 - [binaryen](https://github.com/WebAssembly/binaryen)
+
+### Media:
+- [binaryen](https://kripken.github.io/talks/binaryen.html#/)
