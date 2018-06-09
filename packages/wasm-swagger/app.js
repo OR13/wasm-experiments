@@ -11,7 +11,9 @@ var config = {
 };
 
 SwaggerRestify.create(config, function(err, swaggerRestify) {
-  if (err) { throw err; }
+  if (err) {
+    throw err;
+  }
 
   swaggerRestify.register(app);
 
@@ -19,6 +21,8 @@ SwaggerRestify.create(config, function(err, swaggerRestify) {
   app.listen(port);
 
   if (swaggerRestify.runner.swagger.paths['/hello']) {
-    console.log('try this:\ncurl http://127.0.0.1:' + port + '/hello?name=Scott');
+    console.log(
+      'try this:\ncurl http://127.0.0.1:' + port + '/hello?name=Scott'
+    );
   }
 });

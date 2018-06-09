@@ -3,9 +3,6 @@
   "description": "",
   "version": "1.0.0",
   "scripts": {},
-  "dependencies": {
-    "serve": "^8.1.2"
-  },
   "devDependencies": {
     "lerna": "^2.11.0"
   }

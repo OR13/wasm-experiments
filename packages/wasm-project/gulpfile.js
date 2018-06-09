@@ -5,7 +5,7 @@ gulp.task("build", callback => {
   asc.main([
     "main.ts",
     "--baseDir", "assembly",
-    "--binaryFile", "../out/main.wasm",
+    "--binaryFile", "../src/main.wasm",
     "--sourceMap",
     "--measure"
   ], callback);
