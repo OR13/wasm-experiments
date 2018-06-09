@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "gulp",
-    "test": "node --expose-wasm  ./node_modules/.bin/jest ./src/main.spec.js --env=node"
+    "test": "node --expose-wasm  ./node_modules/.bin/jest ./src/main.spec.js --env=node --coverage"
   },
   "devDependencies": {
     "assemblyscript": "AssemblyScript/assemblyscript",

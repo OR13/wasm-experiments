@@ -1,8 +1,10 @@
 language: node_js
 
 install:
+  - npm i -g lerna
   - npm i
 
 script:
-  - npm run test
-  - node --expose-wasm --harmony test.js
+  - lerna bootstrap
+  - lerna run --scope wasm-project test
+  - lerna run --scope wasm-swagger test
