@@ -2,11 +2,7 @@
   "name": "wasm-experiments",
   "description": "",
   "version": "1.0.0",
-  "scripts": {
-    "start": "serve ./wasm-project",
-    "postinstall": "cd wasm-project && npm i && npm build && cd ..",
-    "test": "cd wasm-project "
-  },
+  "scripts": {},
   "dependencies": {
     "serve": "^8.1.2"
   },

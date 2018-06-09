@@ -1,10 +1,12 @@
 # WASM Experiments
 
-```
-npm i 
-npm run start
+[![Build Status](https://travis-ci.org/OR13/wasm-experiments.svg?branch=master)](https://travis-ci.org/OR13/wasm-experiments)
 
-http://localhost:3000/src/main
+```
+npm i -g lerna
+lerna bootstrap
+lerna run --scope wasm-project test
+lerna run --scope wasm-swagger test
 ```
 
 ### Examples:
